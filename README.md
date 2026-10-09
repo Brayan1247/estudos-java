@@ -1,57 +1,31 @@
-# Estudos de Java
+# Meus estudos de Java
 
-Repositório pessoal para guardar exercícios e exemplos feitos durante o estudo de Java.
+Este repositório acompanha meu aprendizado em Java. Vou adicionando exercícios e pequenos projetos conforme estudo novos assuntos e pratico o que já aprendi.
 
-## Estrutura
+## O que estou praticando
 
-```text
-src/
-└── main/java/       # programas e exercícios Java
-```
+- Variáveis, entrada e saída de dados
+- Operações e condicionais
+- Laços de repetição
 
-Os arquivos atuais são exercícios independentes:
+## Exercícios atuais
 
-- `Main.java`: leitura de números, soma e condicionais.
-- `Repetiçãolista.java`: repetição com `for`.
-- `Tabuadacompleta.java`: impressão de tabuadas.
+- `Main.java`: leitura de dois números, soma e uso de condicionais.
+- `Repetiçãolista.java`: impressão de linhas usando `for`.
+- `Tabuadacompleta.java`: cálculo e impressão de tabuadas.
 
-## Requisitos
+Os códigos ainda são exercícios de estudo e vão evoluir junto com meu aprendizado.
 
-- JDK 25
-- Maven 3.9 ou superior
+## Executar
 
-## Compilar
+O projeto usa Maven e JDK 25. Para compilar:
 
 ```bash
 mvn clean compile
 ```
 
-## Executar um exercício
+Para executar um exercício, troque `Main` pelo nome da classe desejada:
 
 ```bash
-mvn compile
 java -cp target/classes Main
 ```
-
-Troque `Main` pelo nome da classe que deseja executar, sem a extensão `.java`.
-
-## Como adicionar exercícios
-
-Coloque cada programa em `src/main/java` e dê à classe pública um nome que descreva o exercício. Para conectar este projeto ao GitHub, configure o remoto e publique a branch principal uma vez:
-
-```bash
-git remote add origin https://github.com/SEU-USUARIO/estudos-java.git
-git branch -M main
-git push -u origin main
-```
-
-O hook local envia automaticamente cada novo commit quando a branch já possui upstream. Para habilitá-lo em outro clone, execute uma vez `git config core.hooksPath .githooks`. Sem remoto/upstream, o commit permanece local.
-
-Registre as alterações com Git:
-
-```bash
-git add src/main/java
-git commit -m "Adiciona exercício de arrays"
-```
-
-O GitHub Actions compila o projeto a cada push e pull request.
